@@ -5,59 +5,192 @@
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <title>Endless Online Recharged — Unofficial Wiki</title>
   <link rel="stylesheet" href="assets/site.css"/>
+  <script src="assets/app.js" defer></script>
 </head>
 <body>
   <header>
     <div class="header-inner">
       <a class="logo" href="./">
-        <img src="assets/logo.svg" alt="EO" />
-        <b>Endless Online Recharged</b> — Unofficial Wiki
+        <img src="assets/logo.svg" alt="EO"/>
+        <span><b>Endless Online Recharged</b> — Unofficial Wiki</span>
       </a>
+      <div class="header-actions">
+        <button class="icon" id="navToggle">Menu</button>
+        <button class="icon" id="themeToggle">Theme</button>
+      </div>
     </div>
   </header>
 
   <div class="layout">
-    <nav>
-      <h3>Browse</h3>
-      <ul>
-        <li><a class="active" href="./">Home</a></li>
-        <li><a href="skills/skills.html">Skills</a></li>
-        <li><a href="items/weapons.html">Items: Weapons</a></li>
-        <li><a href="npcs/index.html">NPCs</a></li>
-        <li><a href="maps/index.html">Map</a></li>
-      </ul>
+    <aside>
+      <nav>
+        <h3>Browse</h3>
+        <ul>
+          <li><a href="./">Home</a></li>
+          <li><a href="skills/skills.html">Skills</a></li>
+          <li><a href="items/weapons.html">Items: Weapons</a></li>
+          <li><a href="npcs/index.html">NPCs</a></li>
+          <li><a href="maps/index.html">Map</a></li>
+        </ul>
 
-      <h3>Quests & Regions</h3>
-      <ul>
-        <li><a href="quests/aeven.html">Aeven</a></li>
-        <li><a href="quests/atlantis.html">Atlantis</a></li>
-        <!-- add more regions as you create them -->
-      </ul>
-    </nav>
+        <h3>Quests & Regions</h3>
+        <ul>
+          <li><a href="quests/aeven.html">Aeven</a></li>
+          <li><a href="quests/tropica.html">Tropica Island</a></li>
+          <li><a href="quests/sky-world.html">Sky World</a></li>
+          <li><a href="quests/anundo.html">Anundo</a></li>
+          <li><a href="quests/atlantis.html">Atlantis</a></li>
+          <li><a href="quests/centaur-village.html">Centaur Village</a></li>
+          <li><a href="quests/josand.html">Josand</a></li>
+          <li><a href="quests/waku-wilds.html">Waku Wilds</a></li>
+          <li><a href="quests/snowlandia.html">Snowlandia</a></li>
+          <li><a href="quests/nostalgia.html">Nostalgia</a></li>
+          <li><a href="quests/haunted-hallows.html">Haunted Hallows</a></li>
+          <li><a href="quests/ancient-city.html">Ancient City</a></li>
+          <li><a href="quests/port-of-shadows.html">Port of Shadows</a></li>
+          <li><a href="quests/hallodale.html">Hallodale</a></li>
+          <li><a href="quests/moon-murk.html">Moon Murk</a></li>
+          <li><a href="quests/woods-of-despair.html">Woods of Despair</a></li>
+          <li><a href="quests/stronghold.html">Stronghold</a></li>
+        </ul>
+
+        <h3>Items & Equipment</h3>
+        <ul>
+          <li><a href="items/weapons.html">Weapons</a></li>
+          <li><a href="items/armor-male.html">Armor (Male)</a></li>
+          <li><a href="items/armor-female.html">Armor (Female)</a></li>
+          <li><a href="items/headgear.html">Headgear</a></li>
+          <li><a href="items/shields-arrows.html">Shields & Arrows</a></li>
+          <li><a href="items/boots.html">Boots</a></li>
+          <li><a href="items/accessories.html">Accessories</a></li>
+          <li><a href="items/consumables.html">Consumables</a></li>
+          <li><a href="items/monster-parts.html">Monster Parts</a></li>
+          <li><a href="items/resources.html">Resources</a></li>
+          <li><a href="items/materials.html">Materials</a></li>
+          <li><a href="items/quest-items.html">Quest Items</a></li>
+          <li><a href="items/other.html">Other</a></li>
+        </ul>
+
+        <h3>Crafting</h3>
+        <ul>
+          <li><a href="crafting/jewelry.html">Jewelry</a></li>
+          <li><a href="crafting/weapons.html">Weapons</a></li>
+          <li><a href="crafting/armor-male.html">Armor (Male)</a></li>
+          <li><a href="crafting/armor-female.html">Armor (Female)</a></li>
+          <li><a href="crafting/headgear.html">Headgear</a></li>
+          <li><a href="crafting/shields-arrows.html">Shields & Arrows</a></li>
+          <li><a href="crafting/boots.html">Boots</a></li>
+          <li><a href="crafting/textiles.html">Textiles</a></li>
+          <li><a href="crafting/blacksmithing.html">Blacksmithing</a></li>
+          <li><a href="crafting/carpentry.html">Carpentry</a></li>
+          <li><a href="crafting/consumables.html">Consumables</a></li>
+          <li><a href="crafting/quest-items.html">Quest Items</a></li>
+        </ul>
+
+        <h3>Guides</h3>
+        <ul>
+          <li><a href="guides/getting-started.html">Getting Started</a></li>
+          <li><a href="guides/training.html">Training</a></li>
+          <li><a href="guides/travel.html">Travel & Respawns</a></li>
+          <li><a href="guides/instruments-bard.html">Instruments (Bard)</a></li>
+          <li><a href="guides/chests.html">Chests</a></li>
+          <li><a href="guides/special-chests.html">Special Chests</a></li>
+          <li><a href="guides/foraging.html">Foraging & Resources</a></li>
+          <li><a href="guides/skin-melts.html">Skin Melts</a></li>
+          <li><a href="guides/respawn-points.html">Respawn Points</a></li>
+        </ul>
+
+        <h3>Game Info</h3>
+        <ul>
+          <li><a href="info/maps.html">Maps</a></li>
+          <li><a href="info/stat-points.html">Stat Points</a></li>
+          <li><a href="info/commands.html">Commands</a></li>
+          <li><a href="info/events.html">Events</a></li>
+          <li><a href="info/links.html">Links</a></li>
+          <li><a href="info/exp-boost-rate.html">EXP Boost Rate</a></li>
+          <li><a href="info/screenshots.html">Screenshots</a></li>
+        </ul>
+
+        <h3>Tools</h3>
+        <ul>
+          <li><a href="tools/paperdoll.html">Paperdoll Visualizer</a></li>
+        </ul>
+
+        <h3>NPCs</h3>
+        <ul>
+          <li><a href="npcs/index.html">NPC Index</a></li>
+          <li><a href="npcs/monsters.html">Monsters (Bestiary)</a></li>
+          <li><a href="npcs/crafters.html">Crafters</a></li>
+          <li><a href="npcs/shopkeepers.html">Shopkeepers</a></li>
+          <li><a href="npcs/innkeepers.html">Innkeepers</a></li>
+          <li><a href="npcs/bankers.html">Bankers</a></li>
+          <li><a href="npcs/barbers.html">Barbers</a></li>
+          <li><a href="npcs/guild-masters.html">Guild Masters</a></li>
+          <li><a href="npcs/priests.html">Priests</a></li>
+          <li><a href="npcs/lawyers.html">Lawyers</a></li>
+          <li><a href="npcs/skill-masters.html">Skill Masters</a></li>
+          <li><a href="npcs/quest-npcs.html">Quest NPCs</a></li>
+          <li><a href="npcs/collectable.html">Collectable</a></li>
+          <li><a href="npcs/chargers.html">Chargers</a></li>
+          <li><a href="npcs/transportation.html">Transportation</a></li>
+          <li><a href="npcs/other.html">Other NPCs</a></li>
+        </ul>
+      </nav>
+    </aside>
 
     <main>
       <h1>Welcome</h1>
-      <p>This is a clean, static HTML wiki for <b>Endless Online Recharged</b>. Use the sidebar to jump to
-      skills, items, NPCs, and the interactive map.</p>
+      <p>Fan-maintained, up-to-date reference for quests, items, monsters, crafting, and more.</p>
 
-      <h2>Start Here</h2>
-      <ul>
-        <li><a href="skills/skills.html">All Skills</a> — healing, damage, utility (with TP/SP and effects)</li>
-        <li><a href="items/weapons.html">Weapons</a> — quick stats; drops and crafting coming soon</li>
-        <li><a href="npcs/index.html">NPC Index</a> — bestiary, shopkeepers, crafters, and more</li>
-        <li><a href="maps/index.html">Interactive Map</a> — view regions and boss markers</li>
-      </ul>
+      <h2>Quick Start</h2>
+      <div class="cards">
+        <div class="card">
+          <h3>All Skills <span class="badge">Go</span></h3>
+          <p>Healing, damage, and utility with TP/SP costs and effects.</p>
+          <p><a class="inline" href="skills/skills.html">Open Skills</a></p>
+        </div>
+        <div class="card">
+          <h3>Weapons</h3>
+          <p>Damage, accuracy, and notes. Sources coming next.</p>
+          <p><a class="inline" href="items/weapons.html">Open Weapons</a></p>
+        </div>
+        <div class="card">
+          <h3>NPC Index</h3>
+          <p>Bestiary, shopkeepers, crafters, banks, and more.</p>
+          <p><a class="inline" href="npcs/index.html">Open NPCs</a></p>
+        </div>
+      </div>
 
-      <h2>Notes</h2>
-      <ul>
-        <li>This site is pure <code>HTML/CSS</code>, hosted via GitHub Pages.</li>
-        <li>To edit, modify the files in the <code>docs/</code> folder and push to <code>main</code>.</li>
-      </ul>
+      <h2 style="margin-top:22px;">Regions</h2>
+      <div class="cards">
+        <div class="card"><h3>Aeven</h3><p><a class="inline" href="quests/aeven.html">City & Quests</a></p></div>
+        <div class="card"><h3>Tropica Island</h3><p><a class="inline" href="quests/tropica.html">Quests</a></p></div>
+        <div class="card"><h3>Sky World</h3><p><a class="inline" href="quests/sky-world.html">Quests</a></p></div>
+        <div class="card"><h3>Atlantis</h3><p><a class="inline" href="quests/atlantis.html">Quests</a></p></div>
+        <div class="card"><h3>Centaur Village</h3><p><a class="inline" href="quests/centaur-village.html">Quests</a></p></div>
+        <div class="card"><h3>Josand</h3><p><a class="inline" href="quests/josand.html">Quests</a></p></div>
+        <div class="card"><h3>Waku Wilds</h3><p><a class="inline" href="quests/waku-wilds.html">Quests</a></p></div>
+        <div class="card"><h3>Snowlandia</h3><p><a class="inline" href="quests/snowlandia.html">Quests</a></p></div>
+        <div class="card"><h3>Nostalgia</h3><p><a class="inline" href="quests/nostalgia.html">Quests</a></p></div>
+        <div class="card"><h3>Haunted Hallows</h3><p><a class="inline" href="quests/haunted-hallows.html">Quests</a></p></div>
+        <div class="card"><h3>Ancient City</h3><p><a class="inline" href="quests/ancient-city.html">Quests</a></p></div>
+        <div class="card"><h3>Port of Shadows</h3><p><a class="inline" href="quests/port-of-shadows.html">Quests</a></p></div>
+        <div class="card"><h3>Hallodale</h3><p><a class="inline" href="quests/hallodale.html">Quests</a></p></div>
+        <div class="card"><h3>Moon Murk</h3><p><a class="inline" href="quests/moon-murk.html">Quests</a></p></div>
+        <div class="card"><h3>Woods of Despair</h3><p><a class="inline" href="quests/woods-of-despair.html">Quests</a></p></div>
+        <div class="card"><h3>Stronghold</h3><p><a class="inline" href="quests/stronghold.html">Quests</a></p></div>
+      </div>
+
+      <h2 style="margin-top:22px;">Interactive Map</h2>
+      <p><a class="inline" href="maps/index.html">Open the world map</a> — markers link back to region pages.</p>
+
+      <hr>
+      <p style="color:var(--muted)">Not affiliated with Endless Online. Contributions welcome via PRs.</p>
     </main>
   </div>
 
   <footer>
-    <small>Fan-made site. Not affiliated with Endless Online. &middot; Last updated: <!-- set your date here --></small>
+    <small>© Fan-made Wiki • Last updated <!-- your date --></small>
   </footer>
 </body>
 </html>
