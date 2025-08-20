@@ -4,6 +4,7 @@
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <title>Endless Online Recharged — Unofficial Wiki</title>
+  <!-- Core styles + app JS (toggle + active-link) -->
   <link rel="stylesheet" href="assets/site.css"/>
   <script src="assets/app.js" defer></script>
 </head>
@@ -22,64 +23,59 @@
   </header>
 
   <div class="layout">
+    <!-- Minimal sidebar: just the core destinations -->
     <aside>
       <nav>
         <h3>Browse</h3>
         <ul>
           <li><a class="active" href="./">Home</a></li>
-          <li><a href="skills/skills.html">Skills</a></li>
           <li><a href="items/weapons.html">Items</a></li>
           <li><a href="npcs/index.html">NPCs</a></li>
-          <li><a href="maps/index.html">Map</a></li>
+          <li><a href="skills/skills.html">Skills</a></li>
           <li><a href="guides/getting-started.html">Guides</a></li>
+          <li><a href="maps/index.html">Map</a></li>
         </ul>
       </nav>
     </aside>
 
     <main>
       <h1>Welcome</h1>
-      <p>This is the fan-made, up-to-date wiki for <b>Endless Online Recharged</b>. Use the cards below to jump into the main categories.</p>
+      <p>Quick access to the main parts of the wiki. Pick a section to dive in.</p>
 
       <div class="cards">
-        <div class="card">
-          <h3>NPCs</h3>
-          <p>Index of all NPCs including shopkeepers, crafters, and monsters.</p>
-          <p>
-            <a class="inline" href="npcs/index.html">NPC Index</a> ·
-            <a class="inline" href="npcs/monsters.html">Monsters</a> ·
-            <a class="inline" href="npcs/shopkeepers.html">Shopkeepers</a>
-          </p>
-        </div>
-
+        <!-- ITEMS -->
         <div class="card">
           <h3>Items</h3>
-          <p>Weapons, armor, consumables, resources, and quest items.</p>
-          <p>
-            <a class="inline" href="items/weapons.html">Weapons</a> ·
-            <a class="inline" href="items/armor-male.html">Armor</a> ·
-            <a class="inline" href="items/consumables.html">Consumables</a>
-          </p>
+          <p><a class="inline" href="items/weapons.html">Open Items</a></p>
+          <p class="muted">Includes: <a class="inline" href="items/weapons.html">Weapons</a>, <a class="inline" href="items/armor-male.html">Armor</a>, <a class="inline" href="items/consumables.html">Consumables</a>, <a class="inline" href="items/resources.html">Resources</a>…</p>
         </div>
 
+        <!-- NPCs -->
+        <div class="card">
+          <h3>NPCs</h3>
+          <p><a class="inline" href="npcs/index.html">Open NPCs</a></p>
+          <p class="muted">Includes: <a class="inline" href="npcs/monsters.html">Monsters</a>, <a class="inline" href="npcs/shopkeepers.html">Shopkeepers</a>, <a class="inline" href="npcs/crafters.html">Crafters</a>…</p>
+        </div>
+
+        <!-- SKILLS -->
         <div class="card">
           <h3>Skills</h3>
-          <p>Complete list of healing, damage, and utility spells with TP/SP costs.</p>
-          <p><a class="inline" href="skills/skills.html">View Skills</a></p>
+          <p><a class="inline" href="skills/skills.html">Open Skills</a></p>
+          <p class="muted">Healing, Damage, and Utility with TP/SP and effects.</p>
         </div>
 
+        <!-- GUIDES -->
         <div class="card">
           <h3>Guides</h3>
-          <p>Getting started, training, travel, and gameplay tips.</p>
-          <p>
-            <a class="inline" href="guides/getting-started.html">Getting Started</a> ·
-            <a class="inline" href="guides/training.html">Training</a>
-          </p>
+          <p><a class="inline" href="guides/getting-started.html">Open Guides</a></p>
+          <p class="muted">Getting Started, Training, Travel/Respawns, Chests…</p>
         </div>
 
+        <!-- MAP -->
         <div class="card">
           <h3>World Map</h3>
-          <p>Interactive map with locations and boss markers.</p>
           <p><a class="inline" href="maps/index.html">Open Map</a></p>
+          <p class="muted">Interactive EO map with markers linking back to pages.</p>
         </div>
       </div>
     </main>
