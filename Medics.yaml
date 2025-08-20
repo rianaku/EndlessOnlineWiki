@@ -1,0 +1,28 @@
+site_name: My Game Wiki
+site_url: https://rianaku.github.io/EndlessOnlineWiki  # optional
+theme:
+  name: material
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.sections
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+nav:
+  - Home: index.md
+  - Guides:
+      - Getting Started: guides/getting-started.md
+      - Beginners Tips: guides/beginners-tips.md
+  - Items:
+      - Weapons: items/weapons.md
+      - Armor: items/armor.md
+  - Monsters:
+      - Bosses: monsters/bosses.md
+      - Common: monsters/common.md
+markdown_extensions:
+  - toc:
+      permalink: true
+  - admonition
+  - foot
