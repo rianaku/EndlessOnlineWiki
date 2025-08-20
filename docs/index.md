@@ -66,6 +66,27 @@ Use the sections below to jump to what you need. (Links point to pages we’ll c
 
 ---
 
+## NPCs
+Reference for all non-player characters in the game:
+
+- **[NPC Index](npcs/index.md)** — overview of all categories
+- **[Monsters (Bestiary)](npcs/monsters.md)** — monster stats, EXP, drops, locations
+- **[Crafters](npcs/crafters.md)** — forging, dyeing, and crafting NPCs
+- **[Shopkeepers](npcs/shopkeepers.md)** — vendors, merchants, potion sellers
+- **[Innkeepers](npcs/innkeepers.md)** — inns and respawn NPCs
+- **[Bankers](npcs/bankers.md)** — storage and banking services
+- **[Barbers](npcs/barbers.md)** — hairstyles and appearance
+- **[Guild Masters](npcs/guild-masters.md)** — guild creation and management
+- **[Priests](npcs/priests.md)** — temples, blessings, related quests
+- **[Lawyers](npcs/lawyers.md)** — legal/penalty mechanics
+- **[Skill Masters](npcs/skill-masters.md)** — unlock and teach skills  
+  See also: [All Skills](skills/skills.md)
+- **[Quest NPCs](npcs/quest-npcs.md)** — quest givers and actors, by region
+- **[Collectable NPCs](npcs/collectable.md)** — pets and special collectibles
+- **[Chargers](npcs/chargers.md)** — recharge stations and services
+- **[Transportation](npcs/transportation.md)** — boats, ferries, travel routes
+- **[Other NPCs](npcs/other.md)** — miscellaneous NPCs not in other categories
+
 ## Crafting
 - **Jewelry** — [Rings & Amulets](crafting/jewelry.md)
 - **Weapons** — [Forging](crafting/weapons.md)
