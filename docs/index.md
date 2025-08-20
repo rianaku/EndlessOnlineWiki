@@ -1,118 +1,112 @@
+---
+title: Home
+---
+
+<div class="hero" markdown>
+<img src="assets/hero-banner.jpg" alt="Endless Online world" style="width:100%; border-radius:16px; margin-bottom: 1rem;"/>
+
 # Endless Online Recharged — Unofficial Wiki
+A **clean, accurate, and up-to-date** reference for quests, items, bosses, crafting, and more.
 
-Welcome! This fan-maintained wiki aims to be a **clean, accurate, and up-to-date** reference for **Endless Online Recharged**. Use the navigation and search to jump to quests, items, bosses, crafting, and more.
-
-> Tip: Press `/` to focus the search bar.  
-> Contribution ideas? Open an issue or PR.
-
----
-
-## Start Here
-- **[Getting Started](guides/getting-started.md)** — controls, progression basics, and early money routes
-- **[Travel & Respawns](guides/travel.md)** — spawn points, teleports, shortcuts, and routes
-- **[Training](guides/training.md)** — leveling spots by range, gear checkpoints, and XP tips
-- **[Skills & Classes](classes/overview.md)** — class overview, skill unlocks, and builds
+> :material-lightbulb-on: **Tip:** Press `/` to focus search. See something missing? Open an Issue/PR on GitHub.
+</div>
 
 ---
 
-## Quests & Regions
-Explore storylines and side quests region by region:
+## Quick Start
+<div class="grid cards" markdown>
+- :material-compass: **Getting Started**  
+  New player tips, early game routes, money makers.  
+  [:octicons-arrow-right-24: Open](guides/getting-started.md)
 
-- **Aeven** — [City & Quests](quests/aeven.md) • [Battleground](quests/aeven-battleground.md)
-- **Tropica Island** — [Quests](quests/tropica.md)
-- **Sky World** — [Quests](quests/sky-world.md)
-- **Anundo** — [Quests](quests/anundo.md)
-- **Atlantis** — [Quests](quests/atlantis.md)
-- **Centaur Village** — [Quests](quests/centaur-village.md)
-- **Josand** — [Quests](quests/josand.md) • [Battleground](quests/josand-battleground.md)
-- **Waku Wilds** — [Quests](quests/waku-wilds.md)
-- **Snowlandia** — [Quests](quests/snowlandia.md)
-- **Nostalgia** — [Quests](quests/nostalgia.md)
-- **Haunted Hallows** — [Quests](quests/haunted-hallows.md)
-- **Ancient City** — [Quests](quests/ancient-city.md)
-- **Port of Shadows** — [Quests](quests/port-of-shadows.md)
-- **Hallodale** — [Quests](quests/hallodale.md)
-- **Moon Murk** — [Quests](quests/moon-murk.md)
-- **Woods of Despair** — [Quests](quests/woods-of-despair.md)
-- **Stronghold** — [Quests](quests/stronghold.md)
+- :material-sword-cross: **Training**  
+  Level ranges, best spots, recommended gear.  
+  [:octicons-arrow-right-24: Open](guides/training.md)
 
-> Each region page will include: **map**, **quest list**, **key NPCs**, **notable drops**, **puzzle/route notes**, and **recommended levels**.
+- :material-transit-connection: **Travel & Respawns**  
+  Waypoints, teleports, shortcuts, and respawn points.  
+  [:octicons-arrow-right-24: Open](guides/travel.md)
+</div>
 
 ---
 
-## Items & Equipment
-Browse by slot and type:
+## Explore by Category
+<div class="grid cards" markdown>
+- ![Weapons](assets/cards/weapons.png){ width="48" } **Weapons**  
+  Types, stats, sources, and crafting paths.  
+  [:octicons-arrow-right-24: Browse](items/weapons.md)
 
-- **Weapons** — [All Weapons](items/weapons.md)
-- **Armor** — [Male](items/armor-male.md) • [Female](items/armor-female.md)
-- **Headwear** — [Headgear](items/headgear.md)
-- **Off-hand** — [Shields & Arrows](items/shields-arrows.md)
-- **Boots** — [Boots](items/boots.md)
-- **Accessories** — [Rings, Amulets, Etc.](items/accessories.md)
-- **Consumables** — [Potions & Food](items/consumables.md)
-- **Parts & Mats** — [Monster Parts](items/monster-parts.md) • [Resources](items/resources.md) • [Materials](items/materials.md)
-- **Quest Items** — [Quest Items](items/quest-items.md)
-- **Other** — [Miscellaneous](items/other.md)
+- ![Armor](assets/cards/armor.png){ width="48" } **Armor**  
+  Male/Female sets, bonuses, and notable drops.  
+  [:octicons-arrow-right-24: Browse](items/armor-male.md)
 
----
+- ![Consumables](assets/cards/potions.png){ width="48" } **Consumables**  
+  Potions, food effects, cost-efficiency.  
+  [:octicons-arrow-right-24: Browse](items/consumables.md)
 
-## Monsters & Bosses
-- **Monsters** — [Bestiary](npcs/monsters.md) with locations, weaknesses, and drops
-- **Boss Encounters** — [Boss Guides](npcs/bosses.md): mechanics, phases, drop tables
+- ![Monsters](assets/cards/monsters.png){ width="48" } **Bestiary**  
+  Locations, weaknesses, drops, XP values.  
+  [:octicons-arrow-right-24: Browse](npcs/monsters.md)
 
----
+- ![Bosses](assets/cards/boss.png){ width="48" } **Boss Guides**  
+  Mechanics, phases, recommended builds, drop tables.  
+  [:octicons-arrow-right-24: Browse](npcs/bosses.md)
 
-## Crafting
-Crafting disciplines, materials, and recipes:
-
-- **Jewelry** — [Rings & Amulets](crafting/jewelry.md)
-- **Weapons** — [Forging](crafting/weapons.md)
-- **Armor** — [Male](crafting/armor-male.md) • [Female](crafting/armor-female.md)
-- **Headgear** — [Helms & Hats](crafting/headgear.md)
-- **Shields & Arrows** — [Off-hand Crafting](crafting/shields-arrows.md)
-- **Boots** — [Footwear](crafting/boots.md)
-- **Textiles** — [Cloth & Leather](crafting/textiles.md)
-- **Blacksmithing** — [Bars & Plates](crafting/blacksmithing.md)
-- **Carpentry** — [Wood & Bows](crafting/carpentry.md)
-- **Consumables** — [Food & Tonics](crafting/consumables.md)
-- **Quest Items** — [Special Crafts](crafting/quest-items.md)
+- ![Crafting](assets/cards/crafting.png){ width="48" } **Crafting**  
+  Disciplines, materials, recipes, unlocks.  
+  [:octicons-arrow-right-24: Browse](crafting/weapons.md)
+</div>
 
 ---
 
-## Guides (Systems & Tips)
-- **Instruments (Bard)** — [How Instruments Work](guides/instruments-bard.md)
-- **Chests** — [Chest Locations](guides/chests.md) • [Special Chests](guides/special-chests.md)
-- **Foraging & Resources** — [Routes & Respawns](guides/foraging.md)
-- **Skin Melts** — [Skin Melt Index](guides/skin-melts.md)
-- **Travel** — [Waypoints & Shortcuts](guides/travel.md)
-- **Respawn Points** — [Respawns List](guides/respawn-points.md)
-- **Training** — [Leveling Spots](guides/training.md)
+## Regions & Quests
+<div class="grid cards" markdown>
+- :material-city: **Aeven** — city hub, quest lines  
+  [:octicons-arrow-right-24: Quests](quests/aeven.md)
+
+- :material-palm-tree: **Tropica Island** — early adventure, mats  
+  [:octicons-arrow-right-24: Quests](quests/tropica.md)
+
+- :material-clouds: **Sky World** — mid-game progression  
+  [:octicons-arrow-right-24: Quests](quests/sky-world.md)
+
+- :material-water: **Atlantis** — underwater routes & drops  
+  [:octicons-arrow-right-24: Quests](quests/atlantis.md)
+
+- :material-snowflake: **Snowlandia** — cold zones, rare chests  
+  [:octicons-arrow-right-24: Quests](quests/snowlandia.md)
+
+- :material-ghost: **Haunted Hallows** — events, seasonal items  
+  [:octicons-arrow-right-24: Quests](quests/haunted-hallows.md)
+</div>
 
 ---
 
-## Game Info
-- **Maps** — [World & Regions](info/maps.md) • **Gift Box** — [Rewards](info/gift-box.md)
-- **Stats & Points** — [Allocations](info/stat-points.md)
-- **Commands** — [Chat & System Commands](info/commands.md)
-- **Events** — [Event Calendar](info/events.md)
-- **Links** — [Useful Resources](info/links.md)
-- **EXP Boost Rate** — [Boost Schedule & Math](info/exp-boost-rate.md)
-- **Screenshots** — [Gallery](info/screenshots.md)
+## Useful Info
+<div class="grid cards" markdown>
+- :material-map: **Maps**  
+  World/region maps, points of interest.  
+  [:octicons-arrow-right-24: Open](info/maps.md)
+
+- :material-console-line: **Commands**  
+  Chat/system commands and syntax.  
+  [:octicons-arrow-right-24: Open](info/commands.md)
+
+- :material-rocket-launch: **EXP Boost Rate**  
+  Boost schedule and XP math.  
+  [:octicons-arrow-right-24: Open](info/exp-boost-rate.md)
+
+- :material-account-tie: **Paperdoll Tool**  
+  Mix-and-match visualizer for gear.  
+  [:octicons-arrow-right-24: Open](tools/paperdoll.md)
+</div>
 
 ---
 
-## Tools
-- **Paperdoll Tool** — [Visualizer](tools/paperdoll.md)
+!!! info "What’s next?"
+    - Fill region pages with **quest steps**, **NPCs**, **rewards**, **maps**, and **recommended levels**  
+    - Add **drop tables** with verified rates  
+    - Document **crafting recipes** + prerequisites  
+    - Capture **boss mechanics** and suggested builds
 
----
-
-### Roadmap / To-Do
-- Fill in **region quest logs** with steps, rewards, and NPC locations
-- Add **drop tables** with verified rates
-- Map **chest** and **special chest** coordinates
-- Document **crafting recipes** and **skill prerequisites**
-- Capture **boss mechanics** + recommended builds
-
----
-
-_Last updated: {{ update_date }}_
+*Last updated: {{ update_date }}*
