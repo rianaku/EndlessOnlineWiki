@@ -6,6 +6,15 @@
   <title>Weapons — Endless Online Recharged Wiki</title>
   <link rel="stylesheet" href="../assets/site.css"/>
   <script src="../assets/app.js" defer></script>
+  <style>
+    /* small helper just for thumbs in this table */
+    .thumb { width: 36px; height: 36px; object-fit: contain; border-radius: 6px; background: rgba(255,255,255,.04); border: 1px solid var(--border); }
+    .muted-note { color: var(--muted); margin-top: 6px; }
+    .nowrap { white-space: nowrap; }
+    @media (max-width: 640px) {
+      .hide-sm { display: none; }
+    }
+  </style>
 </head>
 <body>
   <header>
@@ -27,8 +36,8 @@
         <h3>Browse</h3>
         <ul>
           <li><a href="../">Home</a></li>
-          <li><a class="active" href="./weapons.html">Items: Weapons</a></li>
-          <li><a href="./index.html">All Items</a></li>
+          <li><a class="active" href="weapons.html">Items: Weapons</a></li>
+          <li><a href="index.html">All Items</a></li>
           <li><a href="../npcs/index.html">NPCs</a></li>
           <li><a href="../skills/skills.html">Skills</a></li>
           <li><a href="../guides/getting-started.html">Guides</a></li>
@@ -39,39 +48,134 @@
 
     <main>
       <h1>Weapons</h1>
-      <p>This page lists weapons in <b>Endless Online Recharged</b>, with quick stats for Damage, Accuracy, and notable bonuses. We’ll add locations, crafting, and drop info next.</p>
+      <p>This page lists weapons in <b>Endless Online Recharged</b>, with quick stats for Damage, Accuracy, and bonuses. Click a weapon for a dedicated page with image, notes, and sources.</p>
       <blockquote>Tip: Use your browser’s find (<kbd>Ctrl</kbd>/<kbd>⌘</kbd>+<kbd>F</kbd>) to jump to a weapon.</blockquote>
-
-      <h2>Stat Glossary</h2>
-      <ul>
-        <li><b>Damage</b>: Min–Max base damage range.</li>
-        <li><b>Accuracy</b>: Hit chance modifier.</li>
-        <li><b>Bonuses</b>: Extra stats (HP/TP, Power, Defense, Aura, Dexterity, etc.).</li>
-        <li><b>Eon Value</b>: Vendor/valuation hint (if shown on source).</li>
-      </ul>
 
       <h2>Notable High-End Weapons</h2>
       <ul>
-        <li><b>Ultima Blade</b> — 50–60 DMG, Acc 44</li>
-        <li><b>Stallion Halberd</b> — 40–56 DMG, Acc 26</li>
-        <li><b>Crystal Blade</b> — 39–55 DMG, Acc 35</li>
-        <li><b>Saw Blade</b> — 39–55 DMG, Acc 35</li>
-        <li><b>Fluon Blade</b> — 37–57 DMG, Acc 39</li>
-        <li><b>Ice Blade</b> — 31–50 DMG, Acc 34</li>
+        <li><a class="inline" href="weapons/ultima-blade.html"><b>Ultima Blade</b></a> — 50–60 DMG, Acc 44</li>
+        <li><a class="inline" href="weapons/stallion-halberd.html"><b>Stallion Halberd</b></a> — 40–56 DMG, Acc 26</li>
+        <li><a class="inline" href="weapons/crystal-blade.html"><b>Crystal Blade</b></a> — 39–55 DMG, Acc 35</li>
+        <li><a class="inline" href="weapons/saw-blade.html"><b>Saw Blade</b></a> — 39–55 DMG, Acc 35</li>
+        <li><a class="inline" href="weapons/fluon-blade.html"><b>Fluon Blade</b></a> — 37–57 DMG, Acc 39</li>
+        <li><a class="inline" href="weapons/ice-blade.html"><b>Ice Blade</b></a> — 31–50 DMG, Acc 34</li>
       </ul>
 
-      <h2>Full Weapons List</h2>
-      <p class="muted">Coming soon: full database-driven table with every weapon, stats, and sources.</p>
-      <!-- placeholder table -->
+      <h2>All Weapons</h2>
+      <p class="muted-note">Images are placeholders — add PNGs to <code>docs/assets/items/weapons/</code> using the shown filenames.</p>
+
       <table>
         <thead>
-          <tr><th>ID</th><th>Name</th><th>Damage</th><th>Accuracy</th><th>Bonuses</th></tr>
+          <tr>
+            <th class="hide-sm" style="width:70px">ID</th>
+            <th style="width:46px">Img</th>
+            <th>Name</th>
+            <th class="nowrap">Damage</th>
+            <th class="nowrap">Accuracy</th>
+            <th>Bonuses / Eon</th>
+          </tr>
         </thead>
         <tbody>
-          <tr><td>1000</td><td>Crystal Blade</td><td>39–55</td><td>35</td><td>—</td></tr>
-          <tr><td>1001</td><td>Ice Blade</td><td>31–50</td><td>34</td><td>—</td></tr>
+          <!-- Each row uses: image at ../assets/items/weapons/<slug>.png and detail page at weapons/<slug>.html -->
+          <tr><td class="hide-sm">1118</td><td><img class="thumb" src="../assets/items/weapons/aeven-small-bow.png" alt=""></td><td><a href="weapons/aeven-small-bow.html">Aeven Small Bow</a></td><td>0–3</td><td>2</td><td>Eon 400</td></tr>
+          <tr><td class="hide-sm">1031</td><td><img class="thumb" src="../assets/items/weapons/aeven-staff.png" alt=""></td><td><a href="weapons/aeven-staff.html">Aeven Staff</a></td><td>10–18</td><td>16</td><td>Eon 300</td></tr>
+          <tr><td class="hide-sm">1020</td><td><img class="thumb" src="../assets/items/weapons/ancient-spear.png" alt=""></td><td><a href="weapons/ancient-spear.html">Ancient Spear</a></td><td>20–46</td><td>32</td><td>Eon 2000</td></tr>
+          <tr><td class="hide-sm">1097</td><td><img class="thumb" src="../assets/items/weapons/ancient-star.png" alt=""></td><td><a href="weapons/ancient-star.html">Ancient Star</a></td><td>6–10</td><td>10</td><td>—</td></tr>
+          <tr><td class="hide-sm">971</td><td><img class="thumb" src="../assets/items/weapons/ancient-sword.png" alt=""></td><td><a href="weapons/ancient-sword.html">Ancient Sword</a></td><td>35–44</td><td>34</td><td>Defense +2</td></tr>
+          <tr><td class="hide-sm">1086</td><td><img class="thumb" src="../assets/items/weapons/atlantis-fishrod.png" alt=""></td><td><a href="weapons/atlantis-fishrod.html">Atlantis Fishrod</a></td><td>0–0</td><td>0</td><td>—</td></tr>
+          <tr><td class="hide-sm">1034</td><td><img class="thumb" src="../assets/items/weapons/aura-staff.png" alt=""></td><td><a href="weapons/aura-staff.html">Aura Staff</a></td><td>1–2</td><td>1</td><td>—</td></tr>
+          <tr><td class="hide-sm">1104</td><td><img class="thumb" src="../assets/items/weapons/bad-mace.png" alt=""></td><td><a href="weapons/bad-mace.html">Bad Mace</a></td><td>1–2</td><td>1</td><td>—</td></tr>
+          <tr><td class="hide-sm">1105</td><td><img class="thumb" src="../assets/items/weapons/barbed-mace.png" alt=""></td><td><a href="weapons/barbed-mace.html">Barbed Mace</a></td><td>1–3</td><td>2</td><td>—</td></tr>
+          <tr><td class="hide-sm">1083</td><td><img class="thumb" src="../assets/items/weapons/basic-fishrod.png" alt=""></td><td><a href="weapons/basic-fishrod.html">Basic Fishrod</a></td><td>0–0</td><td>0</td><td>—</td></tr>
+          <tr><td class="hide-sm">1059</td><td><img class="thumb" src="../assets/items/weapons/battle-axe.png" alt=""></td><td><a href="weapons/battle-axe.html">Battle Axe</a></td><td>1–2</td><td>2</td><td>—</td></tr>
+          <tr><td class="hide-sm">1018</td><td><img class="thumb" src="../assets/items/weapons/battle-spear.png" alt=""></td><td><a href="weapons/battle-spear.html">Battle Spear</a></td><td>12–26</td><td>20</td><td>Eon 600</td></tr>
+          <tr><td class="hide-sm">1127</td><td><img class="thumb" src="../assets/items/weapons/bb-gun.png" alt=""></td><td><a href="weapons/bb-gun.html">BB Gun</a></td><td>1–2</td><td>1</td><td>—</td></tr>
+          <tr><td class="hide-sm">1057</td><td><img class="thumb" src="../assets/items/weapons/big-axe.png" alt=""></td><td><a href="weapons/big-axe.html">Big Axe</a></td><td>1–2</td><td>1</td><td>—</td></tr>
+          <tr><td class="hide-sm">1106</td><td><img class="thumb" src="../assets/items/weapons/big-hammer.png" alt=""></td><td><a href="weapons/big-hammer.html">Big Hammer</a></td><td>0–3</td><td>1</td><td>—</td></tr>
+          <tr><td class="hide-sm">1125</td><td><img class="thumb" src="../assets/items/weapons/bow.png" alt=""></td><td><a href="weapons/bow.html">Bow</a></td><td>1–1</td><td>0</td><td>—</td></tr>
+          <tr><td class="hide-sm">962</td><td><img class="thumb" src="../assets/items/weapons/broadsword.png" alt=""></td><td><a href="weapons/broadsword.html">Broadsword</a></td><td>12–22</td><td>20</td><td>Eon 150</td></tr>
+          <tr><td class="hide-sm">1117</td><td><img class="thumb" src="../assets/items/weapons/broken-bow.png" alt=""></td><td><a href="weapons/broken-bow.html">Broken Bow</a></td><td>0–1</td><td>0</td><td>—</td></tr>
+          <tr><td class="hide-sm">959</td><td><img class="thumb" src="../assets/items/weapons/broken-dagger.png" alt=""></td><td><a href="weapons/broken-dagger.html">Broken Dagger</a></td><td>3–7</td><td>7</td><td>Eon 1</td></tr>
+          <tr><td class="hide-sm">958</td><td><img class="thumb" src="../assets/items/weapons/broken-wrench.png" alt=""></td><td><a href="weapons/broken-wrench.html">Broken Wrench</a></td><td>2–4</td><td>5</td><td>Eon 1</td></tr>
+          <tr><td class="hide-sm">1028</td><td><img class="thumb" src="../assets/items/weapons/broom.png" alt=""></td><td><a href="weapons/broom.html">Broom</a></td><td>14–22</td><td>10</td><td>Eon 200</td></tr>
+          <tr><td class="hide-sm">965</td><td><img class="thumb" src="../assets/items/weapons/butcher-sword.png" alt=""></td><td><a href="weapons/butcher-sword.html">Butcher Sword</a></td><td>1–3</td><td>1</td><td>—</td></tr>
+          <tr><td class="hide-sm">1096</td><td><img class="thumb" src="../assets/items/weapons/candy-cane.png" alt=""></td><td><a href="weapons/candy-cane.html">Candy Cane</a></td><td>14–18</td><td>1</td><td>Eon 120</td></tr>
+          <tr><td class="hide-sm">1038</td><td><img class="thumb" src="../assets/items/weapons/cava-staff.png" alt=""></td><td><a href="weapons/cava-staff.html">Cava Staff</a></td><td>1–2</td><td>1</td><td>—</td></tr>
+          <tr><td class="hide-sm">1103</td><td><img class="thumb" src="../assets/items/weapons/chains.png" alt=""></td><td><a href="weapons/chains.html">Chains</a></td><td>1–4</td><td>2</td><td>—</td></tr>
+          <tr><td class="hide-sm">1124</td><td><img class="thumb" src="../assets/items/weapons/compound.png" alt=""></td><td><a href="weapons/compound.html">Compound</a></td><td>1–1</td><td>0</td><td>—</td></tr>
+          <tr><td class="hide-sm">1008</td><td><img class="thumb" src="../assets/items/weapons/crescent-sword.png" alt=""></td><td><a href="weapons/crescent-sword.html">Crescent Sword</a></td><td>1–2</td><td>1</td><td>—</td></tr>
+          <tr><td class="hide-sm">1037</td><td><img class="thumb" src="../assets/items/weapons/cresent-staff.png" alt=""></td><td><a href="weapons/cresent-staff.html">Cresent Staff</a></td><td>1–2</td><td>1</td><td>—</td></tr>
+          <tr><td class="hide-sm">1123</td><td><img class="thumb" src="../assets/items/weapons/crossbow.png" alt=""></td><td><a href="weapons/crossbow.html">Crossbow</a></td><td>1–1</td><td>0</td><td>—</td></tr>
+          <tr><td class="hide-sm">1000</td><td><img class="thumb" src="../assets/items/weapons/crystal-blade.png" alt=""></td><td><a href="weapons/crystal-blade.html">Crystal Blade</a></td><td>39–55</td><td>35</td><td>—</td></tr>
+          <tr><td class="hide-sm">960</td><td><img class="thumb" src="../assets/items/weapons/dagger.png" alt=""></td><td><a href="weapons/dagger.html">Dagger</a></td><td>5–10</td><td>12</td><td>Eon 40</td></tr>
+          <tr><td class="hide-sm">991</td><td><img class="thumb" src="../assets/items/weapons/dark-katana.png" alt=""></td><td><a href="weapons/dark-katana.html">Dark Katana</a></td><td>26–42</td><td>33</td><td>—</td></tr>
+          <tr><td class="hide-sm">963</td><td><img class="thumb" src="../assets/items/weapons/defender.png" alt=""></td><td><a href="weapons/defender.html">Defender</a></td><td>17–25</td><td>24</td><td>Eon 150</td></tr>
+          <tr><td class="hide-sm">1042</td><td><img class="thumb" src="../assets/items/weapons/demon-staff.png" alt=""></td><td><a href="weapons/demon-staff.html">Demon Staff</a></td><td>1–3</td><td>1</td><td>—</td></tr>
+          <tr><td class="hide-sm">1004</td><td><img class="thumb" src="../assets/items/weapons/dragon-blade.png" alt=""></td><td><a href="weapons/dragon-blade.html">Dragon Blade</a></td><td>1–2</td><td>1</td><td>—</td></tr>
+          <tr><td class="hide-sm">1007</td><td><img class="thumb" src="../assets/items/weapons/dragon-twin-blade.png" alt=""></td><td><a href="weapons/dragon-twin-blade.html">Dragon Twin Blade</a></td><td>1–8</td><td>3</td><td>Power +1</td></tr>
+          <tr><td class="hide-sm">1100</td><td><img class="thumb" src="../assets/items/weapons/fan-fan.png" alt=""></td><td><a href="weapons/fan-fan.html">Fan Fan</a></td><td>0–0</td><td>0</td><td>Dexterity +4, Aura +8</td></tr>
+          <tr><td class="hide-sm">1040</td><td><img class="thumb" src="../assets/items/weapons/fanblade-staff.png" alt=""></td><td><a href="weapons/fanblade-staff.html">Fanblade Staff</a></td><td>2–2</td><td>0</td><td>HP +10, TP +150, Accuracy +3, Defense +6</td></tr>
+          <tr><td class="hide-sm">1077</td><td><img class="thumb" src="../assets/items/weapons/farm-sickle.png" alt=""></td><td><a href="weapons/farm-sickle.html">Farm Sickle</a></td><td>1–2</td><td>5</td><td>—</td></tr>
+          <tr><td class="hide-sm">1033</td><td><img class="thumb" src="../assets/items/weapons/fladdat-staff.png" alt=""></td><td><a href="weapons/fladdat-staff.html">Fladdat Staff</a></td><td>32–48</td><td>33</td><td>Aura +2</td></tr>
+          <tr><td class="hide-sm">1102</td><td><img class="thumb" src="../assets/items/weapons/flail.png" alt=""></td><td><a href="weapons/flail.html">Flail</a></td><td>1–2</td><td>3</td><td>—</td></tr>
+          <tr><td class="hide-sm">1002</td><td><img class="thumb" src="../assets/items/weapons/fluon-blade.png" alt=""></td><td><a href="weapons/fluon-blade.html">Fluon Blade</a></td><td>37–57</td><td>39</td><td>—</td></tr>
+          <tr><td class="hide-sm">1120</td><td><img class="thumb" src="../assets/items/weapons/fluon-crossbow.png" alt=""></td><td><a href="weapons/fluon-crossbow.html">Fluon Crossbow</a></td><td>12–18</td><td>13</td><td>—</td></tr>
+          <tr><td class="hide-sm">1111</td><td><img class="thumb" src="../assets/items/weapons/guitar.png" alt=""></td><td><a href="weapons/guitar.html">Guitar</a></td><td>0–0</td><td>0</td><td>—</td></tr>
+          <tr><td class="hide-sm">1110</td><td><img class="thumb" src="../assets/items/weapons/harp.png" alt=""></td><td><a href="weapons/harp.html">Harp</a></td><td>0–0</td><td>0</td><td>—</td></tr>
+          <tr><td class="hide-sm">1029</td><td><img class="thumb" src="../assets/items/weapons/hockey-stick.png" alt=""></td><td><a href="weapons/hockey-stick.html">Hockey Stick</a></td><td>16–24</td><td>10</td><td>Eon 300</td></tr>
+          <tr><td class="hide-sm">1108</td><td><img class="thumb" src="../assets/items/weapons/holy-book.png" alt=""></td><td><a href="weapons/holy-book.html">Holy Book</a></td><td>1–2</td><td>1</td><td>—</td></tr>
+          <tr><td class="hide-sm">999</td><td><img class="thumb" src="../assets/items/weapons/ice-blade.png" alt=""></td><td><a href="weapons/ice-blade.html">Ice Blade</a></td><td>31–50</td><td>34</td><td>—</td></tr>
+          <tr><td class="hide-sm">998</td><td><img class="thumb" src="../assets/items/weapons/ice-force-dagger.png" alt=""></td><td><a href="weapons/ice-force-dagger.html">Ice Force Dagger</a></td><td>28–36</td><td>49</td><td>—</td></tr>
+          <tr><td class="hide-sm">1019</td><td><img class="thumb" src="../assets/items/weapons/jack-spear.png" alt=""></td><td><a href="weapons/jack-spear.html">Jack Spear</a></td><td>16–36</td><td>24</td><td>Eon 1000</td></tr>
+          <tr><td class="hide-sm">1036</td><td><img class="thumb" src="../assets/items/weapons/jewel-staff.png" alt=""></td><td><a href="weapons/jewel-staff.html">Jewel Staff</a></td><td>1–2</td><td>1</td><td>—</td></tr>
+          <tr><td class="hide-sm">997</td><td><img class="thumb" src="../assets/items/weapons/killer-edge.png" alt=""></td><td><a href="weapons/killer-edge.html">Killer Edge</a></td><td>1–3</td><td>1</td><td>—</td></tr>
+          <tr><td class="hide-sm">1039</td><td><img class="thumb" src="../assets/items/weapons/knob-staff.png" alt=""></td><td><a href="weapons/knob-staff.html">Knob Staff</a></td><td>3–5</td><td>1</td><td>HP +10, TP +25</td></tr>
+          <tr><td class="hide-sm">996</td><td><img class="thumb" src="../assets/items/weapons/kontra-edge.png" alt=""></td><td><a href="weapons/kontra-edge.html">Kontra Edge</a></td><td>2–3</td><td>2</td><td>—</td></tr>
+          <tr><td class="hide-sm">1021</td><td><img class="thumb" src="../assets/items/weapons/lance.png" alt=""></td><td><a href="weapons/lance.html">Lance</a></td><td>1–2</td><td>1</td><td>—</td></tr>
+          <tr><td class="hide-sm">1041</td><td><img class="thumb" src="../assets/items/weapons/lens-of-truth.png" alt=""></td><td><a href="weapons/lens-of-truth.html">Lens Of Truth</a></td><td>4–7</td><td>3</td><td>HP +10, TP +50</td></tr>
+          <tr><td class="hide-sm">990</td><td><img class="thumb" src="../assets/items/weapons/light-katana.png" alt=""></td><td><a href="weapons/light-katana.html">Light Katana</a></td><td>26–42</td><td>33</td><td>—</td></tr>
+          <tr><td class="hide-sm">1126</td><td><img class="thumb" src="../assets/items/weapons/long-bow.png" alt=""></td><td><a href="weapons/long-bow.html">Long Bow</a></td><td>1–1</td><td>0</td><td>—</td></tr>
+          <tr><td class="hide-sm">1001</td><td><img class="thumb" src="../assets/items/weapons/lotus-sword.png" alt=""></td><td><a href="weapons/lotus-sword.html">Lotus Sword</a></td><td>1–3</td><td>7</td><td>—</td></tr>
+          <tr><td class="hide-sm">1035</td><td><img class="thumb" src="../assets/items/weapons/luna-staff.png" alt=""></td><td><a href="weapons/luna-staff.html">Luna Staff</a></td><td>1–2</td><td>1</td><td>—</td></tr>
+          <tr><td class="hide-sm">1022</td><td><img class="thumb" src="../assets/items/weapons/magical-trident.png" alt=""></td><td><a href="weapons/magical-trident.html">Magical Trident</a></td><td>1–2</td><td>1</td><td>—</td></tr>
+          <tr><td class="hide-sm">1061</td><td><img class="thumb" src="../assets/items/weapons/merhawk.png" alt=""></td><td><a href="weapons/merhawk.html">Merhawk</a></td><td>2–2</td><td>2</td><td>—</td></tr>
+          <tr><td class="hide-sm">1072</td><td><img class="thumb" src="../assets/items/weapons/mine-pick.png" alt=""></td><td><a href="weapons/mine-pick.html">Mine Pick</a></td><td>6–16</td><td>12</td><td>Eon 170</td></tr>
+          <tr><td class="hide-sm">1099</td><td><img class="thumb" src="../assets/items/weapons/ninchackus.png" alt=""></td><td><a href="weapons/ninchackus.html">Ninchackus</a></td><td>1–2</td><td>1</td><td>—</td></tr>
+          <tr><td class="hide-sm">1095</td><td><img class="thumb" src="../assets/items/weapons/noelle-staff.png" alt=""></td><td><a href="weapons/noelle-staff.html">Noelle Staff</a></td><td>0–0</td><td>0</td><td>—</td></tr>
+          <tr><td class="hide-sm">1119</td><td><img class="thumb" src="../assets/items/weapons/octem-crossbow.png" alt=""></td><td><a href="weapons/octem-crossbow.html">Octem Crossbow</a></td><td>4–10</td><td>8</td><td>—</td></tr>
+          <tr><td class="hide-sm">1065</td><td><img class="thumb" src="../assets/items/weapons/old-choppy.png" alt=""></td><td><a href="weapons/old-choppy.html">Old Choppy</a></td><td>0–2</td><td>5</td><td>Eon 20</td></tr>
+          <tr><td class="hide-sm">1032</td><td><img class="thumb" src="../assets/items/weapons/phoenix-staff.png" alt=""></td><td><a href="weapons/phoenix-staff.html">Phoenix Staff</a></td><td>22–36</td><td>27</td><td>Aura +1</td></tr>
+          <tr><td class="hide-sm">1101</td><td><img class="thumb" src="../assets/items/weapons/pole-arm.png" alt=""></td><td><a href="weapons/pole-arm.html">Pole Arm</a></td><td>1–2</td><td>3</td><td>—</td></tr>
+          <tr><td class="hide-sm">988</td><td><img class="thumb" src="../assets/items/weapons/rapier.png" alt=""></td><td><a href="weapons/rapier.html">Rapier</a></td><td>1–2</td><td>1</td><td>—</td></tr>
+          <tr><td class="hide-sm">1025</td><td><img class="thumb" src="../assets/items/weapons/reaper.png" alt=""></td><td><a href="weapons/reaper.html">Reaper</a></td><td>8–28</td><td>20</td><td>Eon 250</td></tr>
+          <tr><td class="hide-sm">1026</td><td><img class="thumb" src="../assets/items/weapons/reaper-scyth.png" alt=""></td><td><a href="weapons/reaper-scyth.html">Reaper Scyth</a></td><td>10–51</td><td>30</td><td>—</td></tr>
+          <tr><td class="hide-sm">1071</td><td><img class="thumb" src="../assets/items/weapons/rusty-diggy.png" alt=""></td><td><a href="weapons/rusty-diggy.html">Rusty Diggy</a></td><td>0–2</td><td>6</td><td>Eon 36</td></tr>
+          <tr><td class="hide-sm">989</td><td><img class="thumb" src="../assets/items/weapons/saber.png" alt=""></td><td><a href="weapons/saber.html">Saber</a></td><td>1–2</td><td>1</td><td>—</td></tr>
+          <tr><td class="hide-sm">1078</td><td><img class="thumb" src="../assets/items/weapons/sai.png" alt=""></td><td><a href="weapons/sai.html">Sai</a></td><td>1–2</td><td>5</td><td>—</td></tr>
+          <tr><td class="hide-sm">969</td><td><img class="thumb" src="../assets/items/weapons/sand-sword.png" alt=""></td><td><a href="weapons/sand-sword.html">Sand Sword</a></td><td>12–22</td><td>20</td><td>Eon 150</td></tr>
+          <tr><td class="hide-sm">1003</td><td><img class="thumb" src="../assets/items/weapons/saw-blade.png" alt=""></td><td><a href="weapons/saw-blade.html">Saw Blade</a></td><td>39–55</td><td>35</td><td>—</td></tr>
+          <tr><td class="hide-sm">1112</td><td><img class="thumb" src="../assets/items/weapons/saxophone.png" alt=""></td><td><a href="weapons/saxophone.html">Saxophone</a></td><td>0–0</td><td>0</td><td>—</td></tr>
+          <tr><td class="hide-sm">970</td><td><img class="thumb" src="../assets/items/weapons/shadow-sword.png" alt=""></td><td><a href="weapons/shadow-sword.html">Shadow Sword</a></td><td>20–30</td><td>28</td><td>—</td></tr>
+          <tr><td class="hide-sm">995</td><td><img class="thumb" src="../assets/items/weapons/sharp-edge.png" alt=""></td><td><a href="weapons/sharp-edge.html">Sharp Edge</a></td><td>1–2</td><td>1</td><td>—</td></tr>
+          <tr><td class="hide-sm">964</td><td><img class="thumb" src="../assets/items/weapons/slayer.png" alt=""></td><td><a href="weapons/slayer.html">Slayer</a></td><td>22–30</td><td>24</td><td>Eon 150</td></tr>
+          <tr><td class="hide-sm">1056</td><td><img class="thumb" src="../assets/items/weapons/small-axe.png" alt=""></td><td><a href="weapons/small-axe.html">Small Axe</a></td><td>1–3</td><td>2</td><td>Power +1</td></tr>
+          <tr><td class="hide-sm">994</td><td><img class="thumb" src="../assets/items/weapons/small-edge.png" alt=""></td><td><a href="weapons/small-edge.html">Small Edge</a></td><td>1–2</td><td>1</td><td>—</td></tr>
+          <tr><td class="hide-sm">961</td><td><img class="thumb" src="../assets/items/weapons/small-sword.png" alt=""></td><td><a href="weapons/small-sword.html">Small Sword</a></td><td>10–16</td><td>16</td><td>Eon 70</td></tr>
+          <tr><td class="hide-sm">1017</td><td><img class="thumb" src="../assets/items/weapons/spear.png" alt=""></td><td><a href="weapons/spear.html">Spear</a></td><td>8–22</td><td>18</td><td>Eon 300</td></tr>
+          <tr><td class="hide-sm">1098</td><td><img class="thumb" src="../assets/items/weapons/spirit-star.png" alt=""></td><td><a href="weapons/spirit-star.html">Spirit Star</a></td><td>1–2</td><td>1</td><td>—</td></tr>
+          <tr><td class="hide-sm">1024</td><td><img class="thumb" src="../assets/items/weapons/stallion-halberd.png" alt=""></td><td><a href="weapons/stallion-halberd.html">Stallion Halberd</a></td><td>40–56</td><td>26</td><td>—</td></tr>
+          <tr><td class="hide-sm">1122</td><td><img class="thumb" src="../assets/items/weapons/swamp-bow.png" alt=""></td><td><a href="weapons/swamp-bow.html">Swamp Bow</a></td><td>8–12</td><td>12</td><td>—</td></tr>
+          <tr><td class="hide-sm">1030</td><td><img class="thumb" src="../assets/items/weapons/syringe.png" alt=""></td><td><a href="weapons/syringe.html">Syringe</a></td><td>20–26</td><td>14</td><td>—</td></tr>
+          <tr><td class="hide-sm">1058</td><td><img class="thumb" src="../assets/items/weapons/throw-axe.png" alt=""></td><td><a href="weapons/throw-axe.html">Throw Axe</a></td><td>1–2</td><td>1</td><td>—</td></tr>
+          <tr><td class="hide-sm">1006</td><td><img class="thumb" src="../assets/items/weapons/twin-blade.png" alt=""></td><td><a href="weapons/twin-blade.html">Twin Blade</a></td><td>1–8</td><td>3</td><td>Power +1</td></tr>
+          <tr><td class="hide-sm">1005</td><td><img class="thumb" src="../assets/items/weapons/ultima-blade.png" alt=""></td><td><a href="weapons/ultima-blade.html">Ultima Blade</a></td><td>50–60</td><td>44</td><td>—</td></tr>
+          <tr><td class="hide-sm">1060</td><td><img class="thumb" src="../assets/items/weapons/war-axe.png" alt=""></td><td><a href="weapons/war-axe.html">War Axe</a></td><td>2–2</td><td>2</td><td>—</td></tr>
+          <tr><td class="hide-sm">1027</td><td><img class="thumb" src="../assets/items/weapons/whip.png" alt=""></td><td><a href="weapons/whip.html">Whip</a></td><td>18–24</td><td>10</td><td>—</td></tr>
+          <tr><td class="hide-sm">1066</td><td><img class="thumb" src="../assets/items/weapons/wood-axe.png" alt=""></td><td><a href="weapons/wood-axe.html">Wood Axe</a></td><td>4–10</td><td>10</td><td>Eon 150</td></tr>
         </tbody>
       </table>
+
+      <p class="muted-note">Want me to generate the <b>detail pages</b> in <code>docs/items/weapons/</code> with this same layout and an image slot for each weapon? Say the word and I’ll output them.</p>
     </main>
   </div>
 
@@ -79,4 +183,4 @@
     <small>© Fan-made Wiki • Not affiliated with Endless Online</small>
   </footer>
 </body>
-</html>
+                                                 </html>
