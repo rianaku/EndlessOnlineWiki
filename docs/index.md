@@ -51,6 +51,15 @@ Use the sections below to jump to what you need. (Links point to pages we’ll c
 
 ---
 
+## Skills
+- **[All Skills](skills/skills.md)** — full list of healing, damage, and utility spells with TP/SP costs and effects
+- Future breakdowns (to be added later):
+  - Healing Skills
+  - Damage Skills
+  - Utility & Class Skills
+
+---
+
 ## Monsters & Bosses
 - **Monsters** — [Bestiary](npcs/monsters.md) with locations and drops
 - **Bosses** — [Boss Guides](npcs/bosses.md): mechanics, tips, drop tables
