@@ -7,34 +7,47 @@
   <link
     rel="stylesheet"
     href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
-    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+    crossorigin=""
   />
   <style>
     html, body, #map { height: 100%; margin: 0; }
-    .leaflet-popup-content { font: 14px/1.3 system-ui, sans-serif; }
   </style>
 </head>
 <body>
   <div id="map"></div>
-
   <script
     src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
-    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin="">
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+    crossorigin="">
   </script>
   <script>
-    // Base map (uses OpenStreetMap tiles)
-    const map = L.map('map', { zoomControl: true }).setView([0, 0], 2);
+    const map = L.map('map').setView([0, 0], 2);
 
+    // Base map (temporary OSM layer just so you see *something*)
     L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
       maxZoom: 5, minZoom: 2, attribution: '&copy; OpenStreetMap'
     }).addTo(map);
 
-    // Optional: use a static image (game world) instead of OSM tiles
-    // See Leaflet image overlay example if you have a stitched world image.
-
-    // Load GeoJSON (regions, bosses, etc.)
+    // Load your GeoJSON
     fetch('eo-locations.geojson')
       .then(r => r.json())
+      .then(geo => {
+        const layer = L.geoJSON(geo, {
+          pointToLayer: (feature, latlng) => L.marker(latlng),
+          onEachFeature: (feature, layer) => {
+            const p = feature.properties || {};
+            let html = `<strong>${p.title || "Location"}</strong>`;
+            if (p.desc) html += `<div>${p.desc}</div>`;
+            if (p.link) html += `<div><a href="${p.link}">Open page</a></div>`;
+            layer.bindPopup(html);
+          }
+        }).addTo(map);
+        map.fitBounds(layer.getBounds(), { padding: [30, 30] });
+      });
+  </script>
+</body>
+</html>      .then(r => r.json())
       .then(geo => {
         const layer = L.geoJSON(geo, {
           pointToLayer: (feature, latlng) => L.marker(latlng),
