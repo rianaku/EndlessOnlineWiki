@@ -1,28 +1,74 @@
-site_name: My Game Wiki
-site_url: https://rianaku.github.io/EndlessOnlineWiki  # optional
+site_name: Endless Online Recharged — Unofficial Wiki
+site_url: https://rianaku.github.io/EndlessOnlineWiki
+
 theme:
   name: material
+  logo: assets/logo.png         # put your logo here
+  favicon: assets/favicon.png   # and a 32x32/48x48 icon here
   features:
     - navigation.instant
-    - navigation.tracking
     - navigation.sections
     - navigation.top
     - search.suggest
     - search.highlight
     - content.code.copy
+    - content.tabs.link
+  palette:
+    # Light mode
+    - scheme: default
+      primary: indigo        # try: indigo, teal, green, purple, orange, blue, custom via CSS
+      accent: amber
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    # Dark mode
+    - scheme: slate
+      primary: teal
+      accent: lime
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - footnotes
+  - tables
+  - md_in_html              # enables HTML snippets like card grids
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.emoji:         # Material icons-as-emoji like :material-sword-cross:
+      emoji_index: materialx.emoji.twemoji
+      emoji_generator: materialx.emoji.to_svg
+  - toc:
+      permalink: true
+
+extra_css:
+  - assets/overrides.css     # optional custom tweaks
+
 nav:
   - Home: index.md
   - Guides:
       - Getting Started: guides/getting-started.md
-      - Beginners Tips: guides/beginners-tips.md
+      - Training: guides/training.md
+      - Travel & Respawns: guides/travel.md
   - Items:
       - Weapons: items/weapons.md
-      - Armor: items/armor.md
+      - Armor (Male): items/armor-male.md
+      - Armor (Female): items/armor-female.md
+      - Consumables: items/consumables.md
   - Monsters:
-      - Bosses: monsters/bosses.md
-      - Common: monsters/common.md
-markdown_extensions:
-  - toc:
-      permalink: true
-  - admonition
-  - foot
+      - Bestiary: npcs/monsters.md
+      - Bosses: npcs/bosses.md
+  - Crafting:
+      - Jewelry: crafting/jewelry.md
+      - Weapons: crafting/weapons.md
+      - Textiles: crafting/textiles.md
+  - Info:
+      - Maps: info/maps.md
+      - Commands: info/commands.md
+      - EXP Boost Rate: info/exp-boost-rate.md
+  - Tools:
+      - Paperdoll: tools/paperdoll.md
