@@ -1,0 +1,24 @@
+/* Subtle card hover + rounded corners */
+.md-typeset .grid.cards > ul > li {
+  border-radius: 14px;
+  transition: transform .08s ease, box-shadow .08s ease;
+  box-shadow: 0 0 0 1px rgba(0,0,0,.05);
+}
+.md-typeset .grid.cards > ul > li:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 20px rgba(0,0,0,.08);
+}
+
+/* Accent headings on homepage hero */
+.hero h1 {
+  margin-bottom: .25rem;
+}
+.hero p {
+  margin-top: .25rem;
+  opacity: .9;
+}
+
+/* Optional: brighten link color on dark mode */
+[data-md-color-scheme="slate"] .md-typeset a {
+  text-underline-offset: 3px;
+}
