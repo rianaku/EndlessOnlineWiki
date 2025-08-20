@@ -1,0 +1,27 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type":"Feature",
+      "properties":{
+        "title":"Aeven",
+        "desc":"City hub — quests & services.",
+        "link":"../quests/aeven.md"
+      },
+      "geometry":{"type":"Point","coordinates":[0,0]}
+    },
+    {
+      "type":"Feature",
+      "properties":{
+        "title":"Atlantis",
+        "desc":"Underwater region.",
+        "link":"../quests/atlantis.md"
+      },
+      "geometry":{"type":"Point","coordinates":[10,5]}
+    },
+    {
+      "type":"Feature",
+      "properties":{
+        "title":"Octo (Boss)",
+        "desc":"Boss encounter; see drops.",
+        "link
